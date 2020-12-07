@@ -36,5 +36,11 @@
 	<string>$(PRODUCT_MODULE_NAME).ExtensionDelegate</string>
 	<key>WKRunsIndependentlyOfCompanionApp</key>
 	<true/>
+	<key>NSHealthClinicalHealthRecordsShareUsageDescription</key>
+	<string>App needs to read Your health records for operability only</string>
+	<key>NSHealthShareUsageDescription</key>
+	<string>App needs to share Your health records for operability only</string>
+	<key>NSHealthUpdateUsageDescription</key>
+	<string>App needs to update Your health records for operability only</string>
 </dict>
 </plist>
