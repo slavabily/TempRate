@@ -1,0 +1,669 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F91AF518257E5E5D0057C0A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91AF517257E5E5D0057C0A6 /* AppDelegate.swift */; };
+		F91AF51A257E5E5D0057C0A6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91AF519257E5E5D0057C0A6 /* SceneDelegate.swift */; };
+		F91AF51C257E5E5D0057C0A6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91AF51B257E5E5D0057C0A6 /* ContentView.swift */; };
+		F91AF51E257E5E650057C0A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F91AF51D257E5E650057C0A6 /* Assets.xcassets */; };
+		F91AF521257E5E650057C0A6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F91AF520257E5E650057C0A6 /* Preview Assets.xcassets */; };
+		F91AF524257E5E650057C0A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F91AF522257E5E650057C0A6 /* LaunchScreen.storyboard */; };
+		F91AF529257E5E650057C0A6 /* TempRate WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F91AF528257E5E650057C0A6 /* TempRate WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F91AF52F257E5E650057C0A6 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F91AF52D257E5E650057C0A6 /* Interface.storyboard */; };
+		F91AF531257E5E670057C0A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F91AF530257E5E670057C0A6 /* Assets.xcassets */; };
+		F91AF538257E5E670057C0A6 /* TempRate WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F91AF537257E5E670057C0A6 /* TempRate WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F91AF53D257E5E670057C0A6 /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91AF53C257E5E670057C0A6 /* HostingController.swift */; };
+		F91AF53F257E5E670057C0A6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91AF53E257E5E670057C0A6 /* ContentView.swift */; };
+		F91AF541257E5E670057C0A6 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91AF540257E5E670057C0A6 /* ExtensionDelegate.swift */; };
+		F91AF543257E5E670057C0A6 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91AF542257E5E670057C0A6 /* NotificationController.swift */; };
+		F91AF545257E5E670057C0A6 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91AF544257E5E670057C0A6 /* NotificationView.swift */; };
+		F91AF547257E5E670057C0A6 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91AF546257E5E670057C0A6 /* ComplicationController.swift */; };
+		F91AF549257E5E680057C0A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F91AF548257E5E680057C0A6 /* Assets.xcassets */; };
+		F91AF54C257E5E690057C0A6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F91AF54B257E5E690057C0A6 /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F91AF52A257E5E650057C0A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F91AF50C257E5E5D0057C0A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F91AF527257E5E650057C0A6;
+			remoteInfo = "TempRate WatchKit App";
+		};
+		F91AF539257E5E670057C0A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F91AF50C257E5E5D0057C0A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F91AF536257E5E670057C0A6;
+			remoteInfo = "TempRate WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F91AF554257E5E690057C0A6 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F91AF538257E5E670057C0A6 /* TempRate WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F91AF558257E5E690057C0A6 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				F91AF529257E5E650057C0A6 /* TempRate WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F91AF514257E5E5D0057C0A6 /* TempRate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TempRate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F91AF517257E5E5D0057C0A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F91AF519257E5E5D0057C0A6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F91AF51B257E5E5D0057C0A6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F91AF51D257E5E650057C0A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F91AF520257E5E650057C0A6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F91AF523257E5E650057C0A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F91AF525257E5E650057C0A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F91AF528257E5E650057C0A6 /* TempRate WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TempRate WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F91AF52E257E5E650057C0A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		F91AF530257E5E670057C0A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F91AF532257E5E670057C0A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F91AF537257E5E670057C0A6 /* TempRate WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TempRate WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F91AF53C257E5E670057C0A6 /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		F91AF53E257E5E670057C0A6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F91AF540257E5E670057C0A6 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		F91AF542257E5E670057C0A6 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		F91AF544257E5E670057C0A6 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		F91AF546257E5E670057C0A6 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		F91AF548257E5E680057C0A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F91AF54B257E5E690057C0A6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F91AF54D257E5E690057C0A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F91AF54E257E5E690057C0A6 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F91AF511257E5E5D0057C0A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F91AF534257E5E670057C0A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F91AF50B257E5E5D0057C0A6 = {
+			isa = PBXGroup;
+			children = (
+				F91AF516257E5E5D0057C0A6 /* TempRate */,
+				F91AF52C257E5E650057C0A6 /* TempRate WatchKit App */,
+				F91AF53B257E5E670057C0A6 /* TempRate WatchKit Extension */,
+				F91AF515257E5E5D0057C0A6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F91AF515257E5E5D0057C0A6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F91AF514257E5E5D0057C0A6 /* TempRate.app */,
+				F91AF528257E5E650057C0A6 /* TempRate WatchKit App.app */,
+				F91AF537257E5E670057C0A6 /* TempRate WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F91AF516257E5E5D0057C0A6 /* TempRate */ = {
+			isa = PBXGroup;
+			children = (
+				F91AF517257E5E5D0057C0A6 /* AppDelegate.swift */,
+				F91AF519257E5E5D0057C0A6 /* SceneDelegate.swift */,
+				F91AF51B257E5E5D0057C0A6 /* ContentView.swift */,
+				F91AF51D257E5E650057C0A6 /* Assets.xcassets */,
+				F91AF522257E5E650057C0A6 /* LaunchScreen.storyboard */,
+				F91AF525257E5E650057C0A6 /* Info.plist */,
+				F91AF51F257E5E650057C0A6 /* Preview Content */,
+			);
+			path = TempRate;
+			sourceTree = "<group>";
+		};
+		F91AF51F257E5E650057C0A6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F91AF520257E5E650057C0A6 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F91AF52C257E5E650057C0A6 /* TempRate WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				F91AF52D257E5E650057C0A6 /* Interface.storyboard */,
+				F91AF530257E5E670057C0A6 /* Assets.xcassets */,
+				F91AF532257E5E670057C0A6 /* Info.plist */,
+			);
+			path = "TempRate WatchKit App";
+			sourceTree = "<group>";
+		};
+		F91AF53B257E5E670057C0A6 /* TempRate WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F91AF53C257E5E670057C0A6 /* HostingController.swift */,
+				F91AF53E257E5E670057C0A6 /* ContentView.swift */,
+				F91AF540257E5E670057C0A6 /* ExtensionDelegate.swift */,
+				F91AF542257E5E670057C0A6 /* NotificationController.swift */,
+				F91AF544257E5E670057C0A6 /* NotificationView.swift */,
+				F91AF546257E5E670057C0A6 /* ComplicationController.swift */,
+				F91AF548257E5E680057C0A6 /* Assets.xcassets */,
+				F91AF54D257E5E690057C0A6 /* Info.plist */,
+				F91AF54E257E5E690057C0A6 /* PushNotificationPayload.apns */,
+				F91AF54A257E5E690057C0A6 /* Preview Content */,
+			);
+			path = "TempRate WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		F91AF54A257E5E690057C0A6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F91AF54B257E5E690057C0A6 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F91AF513257E5E5D0057C0A6 /* TempRate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F91AF559257E5E690057C0A6 /* Build configuration list for PBXNativeTarget "TempRate" */;
+			buildPhases = (
+				F91AF510257E5E5D0057C0A6 /* Sources */,
+				F91AF511257E5E5D0057C0A6 /* Frameworks */,
+				F91AF512257E5E5D0057C0A6 /* Resources */,
+				F91AF558257E5E690057C0A6 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F91AF52B257E5E650057C0A6 /* PBXTargetDependency */,
+			);
+			name = TempRate;
+			productName = TempRate;
+			productReference = F91AF514257E5E5D0057C0A6 /* TempRate.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F91AF527257E5E650057C0A6 /* TempRate WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F91AF555257E5E690057C0A6 /* Build configuration list for PBXNativeTarget "TempRate WatchKit App" */;
+			buildPhases = (
+				F91AF526257E5E650057C0A6 /* Resources */,
+				F91AF554257E5E690057C0A6 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F91AF53A257E5E670057C0A6 /* PBXTargetDependency */,
+			);
+			name = "TempRate WatchKit App";
+			productName = "TempRate WatchKit App";
+			productReference = F91AF528257E5E650057C0A6 /* TempRate WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		F91AF536257E5E670057C0A6 /* TempRate WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F91AF551257E5E690057C0A6 /* Build configuration list for PBXNativeTarget "TempRate WatchKit Extension" */;
+			buildPhases = (
+				F91AF533257E5E670057C0A6 /* Sources */,
+				F91AF534257E5E670057C0A6 /* Frameworks */,
+				F91AF535257E5E670057C0A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TempRate WatchKit Extension";
+			productName = "TempRate WatchKit Extension";
+			productReference = F91AF537257E5E670057C0A6 /* TempRate WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F91AF50C257E5E5D0057C0A6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					F91AF513257E5E5D0057C0A6 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					F91AF527257E5E650057C0A6 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					F91AF536257E5E670057C0A6 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+				};
+			};
+			buildConfigurationList = F91AF50F257E5E5D0057C0A6 /* Build configuration list for PBXProject "TempRate" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F91AF50B257E5E5D0057C0A6;
+			productRefGroup = F91AF515257E5E5D0057C0A6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F91AF513257E5E5D0057C0A6 /* TempRate */,
+				F91AF527257E5E650057C0A6 /* TempRate WatchKit App */,
+				F91AF536257E5E670057C0A6 /* TempRate WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F91AF512257E5E5D0057C0A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F91AF524257E5E650057C0A6 /* LaunchScreen.storyboard in Resources */,
+				F91AF521257E5E650057C0A6 /* Preview Assets.xcassets in Resources */,
+				F91AF51E257E5E650057C0A6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F91AF526257E5E650057C0A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F91AF531257E5E670057C0A6 /* Assets.xcassets in Resources */,
+				F91AF52F257E5E650057C0A6 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F91AF535257E5E670057C0A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F91AF54C257E5E690057C0A6 /* Preview Assets.xcassets in Resources */,
+				F91AF549257E5E680057C0A6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F91AF510257E5E5D0057C0A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F91AF518257E5E5D0057C0A6 /* AppDelegate.swift in Sources */,
+				F91AF51A257E5E5D0057C0A6 /* SceneDelegate.swift in Sources */,
+				F91AF51C257E5E5D0057C0A6 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F91AF533257E5E670057C0A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F91AF53F257E5E670057C0A6 /* ContentView.swift in Sources */,
+				F91AF53D257E5E670057C0A6 /* HostingController.swift in Sources */,
+				F91AF543257E5E670057C0A6 /* NotificationController.swift in Sources */,
+				F91AF541257E5E670057C0A6 /* ExtensionDelegate.swift in Sources */,
+				F91AF545257E5E670057C0A6 /* NotificationView.swift in Sources */,
+				F91AF547257E5E670057C0A6 /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F91AF52B257E5E650057C0A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F91AF527257E5E650057C0A6 /* TempRate WatchKit App */;
+			targetProxy = F91AF52A257E5E650057C0A6 /* PBXContainerItemProxy */;
+		};
+		F91AF53A257E5E670057C0A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F91AF536257E5E670057C0A6 /* TempRate WatchKit Extension */;
+			targetProxy = F91AF539257E5E670057C0A6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F91AF522257E5E650057C0A6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F91AF523257E5E650057C0A6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F91AF52D257E5E650057C0A6 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F91AF52E257E5E650057C0A6 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F91AF54F257E5E690057C0A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F91AF550257E5E690057C0A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		F91AF552257E5E690057C0A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"TempRate WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = L6T2S9K4GS;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "TempRate WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = slavabily.TempRate.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Debug;
+		};
+		F91AF553257E5E690057C0A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"TempRate WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = L6T2S9K4GS;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "TempRate WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = slavabily.TempRate.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Release;
+		};
+		F91AF556257E5E690057C0A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L6T2S9K4GS;
+				IBSC_MODULE = TempRate_WatchKit_Extension;
+				INFOPLIST_FILE = "TempRate WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = slavabily.TempRate.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Debug;
+		};
+		F91AF557257E5E690057C0A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L6T2S9K4GS;
+				IBSC_MODULE = TempRate_WatchKit_Extension;
+				INFOPLIST_FILE = "TempRate WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = slavabily.TempRate.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Release;
+		};
+		F91AF55A257E5E690057C0A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"TempRate/Preview Content\"";
+				DEVELOPMENT_TEAM = L6T2S9K4GS;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = TempRate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = slavabily.TempRate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F91AF55B257E5E690057C0A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"TempRate/Preview Content\"";
+				DEVELOPMENT_TEAM = L6T2S9K4GS;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = TempRate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = slavabily.TempRate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F91AF50F257E5E5D0057C0A6 /* Build configuration list for PBXProject "TempRate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F91AF54F257E5E690057C0A6 /* Debug */,
+				F91AF550257E5E690057C0A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F91AF551257E5E690057C0A6 /* Build configuration list for PBXNativeTarget "TempRate WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F91AF552257E5E690057C0A6 /* Debug */,
+				F91AF553257E5E690057C0A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F91AF555257E5E690057C0A6 /* Build configuration list for PBXNativeTarget "TempRate WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F91AF556257E5E690057C0A6 /* Debug */,
+				F91AF557257E5E690057C0A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F91AF559257E5E690057C0A6 /* Build configuration list for PBXNativeTarget "TempRate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F91AF55A257E5E690057C0A6 /* Debug */,
+				F91AF55B257E5E690057C0A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F91AF50C257E5E5D0057C0A6 /* Project object */;
+}
