@@ -11,39 +11,41 @@ import HealthKit
 struct ContentView: View {
     
     private var healthStore = HKHealthStore()
-    let heartRateQuantity = HKUnit(from: "count/min")
+    let bodyTemperatureQuantity = HKUnit(from: "degC")
         
-    @State private var value = 0
+    @State private var value = 0.0
     
     func start() {
         authorizeHealthKit()
-        startHeartRateQuery(quantityTypeIdentifier: .heartRate)
+        startBodyTemperatureQuery(quantityTypeIdentifier: .bodyTemperature)
     }
     
     func authorizeHealthKit() {
         
         // Used to define the identifiers that create quantity type objects.
         let healthKitTypes: Set = [
-            HKObjectType.quantityType(forIdentifier: HKQuantityTypeIdentifier.heartRate)!]
+            HKObjectType.quantityType(forIdentifier: HKQuantityTypeIdentifier.bodyTemperature)!, HKObjectType.quantityType(forIdentifier: .heartRate)!]
         // Requests permission to save and read the specified data types.
         healthStore.requestAuthorization(toShare: healthKitTypes, read: healthKitTypes) { _, _ in }
     }
     
     private func process(_ samples: [HKQuantitySample], type: HKQuantityTypeIdentifier) {
         // variable initialization
-        var lastHeartRate = 0.0
+        var lastBodyTemperatureRate = 0.0
         
         // cycle and value assignment
         for sample in samples {
-            if type == .heartRate {
-                lastHeartRate = sample.quantity.doubleValue(for: heartRateQuantity)
+            if type == .bodyTemperature {
+                lastBodyTemperatureRate = sample.quantity.doubleValue(for: bodyTemperatureQuantity)
             }
             
-            self.value = Int(lastHeartRate)
+            self.value = lastBodyTemperatureRate
+            
+            print("The last temperature value is: \(value)")
         }
     }
     
-    private func startHeartRateQuery(quantityTypeIdentifier: HKQuantityTypeIdentifier) {
+    private func startBodyTemperatureQuery(quantityTypeIdentifier: HKQuantityTypeIdentifier) {
             
             // We want data points from our current device
             let devicePredicate = HKQuery.predicateForObjects(from: [HKDevice.local()])
@@ -74,7 +76,16 @@ struct ContentView: View {
     var body: some View {
             VStack{
                 HStack{
-                    Text("❤️")
+                    Text("""
+                            Body
+                            temp
+                        """)
+                        .font(.headline)
+                        .fontWeight(.bold)
+                        .foregroundColor(Color.red)
+                        .padding(.bottom, 28.0)
+                    Spacer()
+                    Text("🌡")
                         .font(.system(size: 50))
                     Spacer()
 
@@ -85,7 +96,7 @@ struct ContentView: View {
                         .fontWeight(.regular)
                         .font(.system(size: 70))
                     
-                    Text("BPM")
+                    Text("℃")
                         .font(.headline)
                         .fontWeight(.bold)
                         .foregroundColor(Color.red)
