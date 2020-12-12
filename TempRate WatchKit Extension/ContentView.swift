@@ -13,7 +13,7 @@ struct ContentView: View {
     private var healthStore = HKHealthStore()
     let bodyTemperatureQuantity = HKUnit(from: "degC")
         
-    @State private var value = 0.0
+    @State private var value = 36.6
     
     func start() {
         authorizeHealthKit()
@@ -24,7 +24,7 @@ struct ContentView: View {
         
         // Used to define the identifiers that create quantity type objects.
         let healthKitTypes: Set = [
-            HKObjectType.quantityType(forIdentifier: HKQuantityTypeIdentifier.bodyTemperature)!, HKObjectType.quantityType(forIdentifier: .heartRate)!]
+            HKObjectType.quantityType(forIdentifier: HKQuantityTypeIdentifier.bodyTemperature)!]
         // Requests permission to save and read the specified data types.
         healthStore.requestAuthorization(toShare: healthKitTypes, read: healthKitTypes) { _, _ in }
     }
@@ -92,9 +92,9 @@ struct ContentView: View {
                 }
                 
                 HStack{
-                    Text("\(value)")
+                    Text("\(value, specifier: "%.1f")")
                         .fontWeight(.regular)
-                        .font(.system(size: 70))
+                        .font(.system(size: 60))
                     
                     Text("℃")
                         .font(.headline)
@@ -103,9 +103,7 @@ struct ContentView: View {
                         .padding(.bottom, 28.0)
                     
                     Spacer()
-                    
                 }
-
             }
             .padding()
             .onAppear(perform: start)
